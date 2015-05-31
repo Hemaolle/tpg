@@ -16,9 +16,10 @@
 	<div class="blue">BLUE</div>
 	<div class="yellow">YELLOW</div> -->
 	<div>You are at the <span id="currentLocation">Marketplace</span></div>
+	<div id="locationDescription">Description</div>
 	<div>	
 		Go to the 
-		<select id="placeDropDown" onchange="onLocationChange(this.value)">
+		<select id="placeDropDown" onchange="setLocation(this.value)">
 			<option>Pick a location</option>
 		</select>
 	</div>

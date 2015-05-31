@@ -20,14 +20,13 @@ var areas = {
 window.onload = start;
 
 function start () {
-	currentLocation = areas["market"];
-	document.getElementById("currentLocation").innerHTML = currentLocation.name;
-	updateLocationOptions();
+	setLocation("market");
 }
 
-function onLocationChange(val) {
+function setLocation(val) {
 	currentLocation = areas[val];
 	document.getElementById("currentLocation").innerHTML = currentLocation.name;
+	document.getElementById("locationDescription").innerHTML = currentLocation.description;
 	updateLocationOptions();
 }
 
