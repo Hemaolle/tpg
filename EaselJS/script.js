@@ -14,8 +14,18 @@ var areas = {
 	"courthouse": {
 		"name": "Courthouse",
 		"description": "The courthouse is closed today."
+	},
+	"circus": {
+		"name": "Circus",
+		"description": "The acrobats are practicing their performance."
+	},
+	"castle": {
+		"name": "Castle",
+		"description": "The king is waving at the people from the balcony."
 	}
 };
+
+
 
 window.onload = start;
 
