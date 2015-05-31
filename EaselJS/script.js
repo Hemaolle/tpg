@@ -4,15 +4,27 @@ function clickTest() {
 	document.getElementById("redId").innerHTML = "test";
 }
 
-var areas = ["Market", "Courthouse", "Church", "Circus"];
+// var areas = ["Market", "Courthouse", "Church", "Circus"];
+
+var areas = {
+	"areas": [
+		{
+			"name": "Market",
+			"description": "The market is full of sounds of bargaining."
+		},
+		{
+			"name": "Courthouse",
+			"description": "The courthouse is closed today."
+		}
+	]
+};
 
 window.onload = start;
 
 function start () {
-	currentLocation = areas[0];
+	currentLocation = areas.areas[0];
 	updateLocationOptions();
-	document.getElementById("redId").innerHTML = "start";
-	document.getElementById("currentLocation").innerHTML = areas[0];
+	document.getElementById("currentLocation").innerHTML = areas.areas[0].name;
 }
 
 function onLocationChange(val) {
@@ -23,10 +35,11 @@ function onLocationChange(val) {
 
 function updateLocationOptions() {
 	var optionIndex = 1;
-	for(var index in areas){
-		if(areas[index] != currentLocation) {
+	for(var i = 0; i < areas.areas.length; i++){
+		var area = areas.areas[i];
+		if(area != currentLocation) {
 			placeDropDown.options[optionIndex] =
-				new Option(areas[index], areas[index]);
+				new Option(area.name, area.name);
 			optionIndex = optionIndex + 1;
 		}
 	}
