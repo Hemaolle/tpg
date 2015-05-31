@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="uistyle.css">
@@ -14,10 +15,10 @@
 	<div class="green">GREEN</div>
 	<div class="blue">BLUE</div>
 	<div class="yellow">YELLOW</div>
-	<button onclick="clickTest()">Test</button>
-	<select>
-		<option value="test">test</option>
-		<option value="test2">test2</option>
-	</select>
+	<div>You are at the <span id="currentLocation">Marketplace</span></div>
+	<div>	
+		Go to the 
+		<select id="placeDropDown" onchange="onLocationChange(this.value)"></select>
+	</div>
 </body>
 </html>
