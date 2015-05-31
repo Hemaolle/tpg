@@ -22,7 +22,7 @@ function onLocationChange(val) {
 }
 
 function updateLocationOptions() {
-	var optionIndex = 0;
+	var optionIndex = 1;
 	for(var index in areas){
 		if(areas[index] != currentLocation) {
 			placeDropDown.options[optionIndex] =
