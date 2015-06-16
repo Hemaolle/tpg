@@ -7,11 +7,9 @@ namespace Dystopia.Dummy {
 	public class DummyWorld : Dystopia.Model.World {
 
 		public override List<Location> Locations {
-			get { return Locations;}
-			set;
+			get { return locations;}
+			set { locations = value; }
 		}
 		private List<Location> locations; 
-
-
 	}
 }
