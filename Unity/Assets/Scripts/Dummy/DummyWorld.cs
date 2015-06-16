@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using Dystopia.Model;
 
 namespace Dystopia.Dummy {
-	public class DummyWorld : MonoBehaviour {
+	public class DummyWorld : Dystopia.Model.World {
 
-		// Use this for initialization
-		void Start () {
-		
+		public override List<Location> Locations {
+			get { return Locations;}
+			set;
 		}
-		
-		// Update is called once per frame
-		void Update () {
-		
-		}
+		private List<Location> locations; 
+
+
 	}
 }

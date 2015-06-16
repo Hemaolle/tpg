@@ -6,7 +6,7 @@ namespace Dystopia.Model {
 
 	public class World {
 
-		public List<Location> Locations {
+		public virtual List<Location> Locations {
 			get;
 			set;
 		}
