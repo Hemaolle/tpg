@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Dystopia.Model {
 
@@ -7,5 +8,14 @@ namespace Dystopia.Model {
 	[System.Serializable]
 	public class Location {
 
+		public List<Area> Areas {
+			get;
+			set;
+		}
+
+		public Vector2 Coordinates {
+			get;
+			set;
+		}
 	}
 }
