@@ -13,7 +13,7 @@ namespace Dystopia.Model {
 			set;
 		}
 
-		public Vector2 Coordinates {
+		public virtual Vector2 Coordinates {
 			get;
 			set;
 		}
