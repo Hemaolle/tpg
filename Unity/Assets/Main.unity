@@ -236,6 +236,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &662472264
 Transform:
   m_ObjectHideFlags: 0
@@ -341,7 +342,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29cbc96f1d256ee4f8f0cef383622204, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &1419288576
+--- !u!224 &1419288576 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22417940, guid: 29cbc96f1d256ee4f8f0cef383622204,
     type: 2}
@@ -482,6 +483,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &1994064125
 MonoBehaviour:
