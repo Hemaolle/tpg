@@ -24,7 +24,7 @@ namespace Dystopia.Model {
 			set;
 		}
 
-		public List<Area> Neighbours {
+		public Area[] Neighbours {
 			get;
 			set;
 		}
