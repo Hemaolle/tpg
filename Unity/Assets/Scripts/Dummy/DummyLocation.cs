@@ -3,20 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using Dystopia.Model;
 
-public class DummyLocation : Location {
+namespace Dystopia.Dummy
+{
 
-	public DummyLocation(Vector2 coordinates) {
-		this.coordinates = coordinates;
-	}
+	public class DummyLocation : Location {
 
-	private Vector2 coordinates;
-	public override Vector2 Coordinates {
-		get {
-			return coordinates;
+		public DummyLocation(Vector2 coordinates) {
+			this.coordinates = coordinates;
 		}
-		set {
-			coordinates = value;
+
+		private Vector2 coordinates;
+		public override Vector2 Coordinates {
+			get {
+				return coordinates;
+			}
+			set {
+				coordinates = value;
+			}
 		}
 	}
-
 }
