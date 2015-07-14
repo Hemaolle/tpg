@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d507cb236128d4fad58bc511261984, type: 3}
+  m_Name: Shop
+  m_EditorClassIdentifier: 
+  Description: A beautiful shop
+  Picture: {fileID: 21300000, guid: ee83bfb248368ce41ac9783ede3427c3, type: 3}
+  areaLinks:
+  - LinkLocation: {x: .200000003, y: .200000003}
+    LinkedArea: {fileID: 11400000, guid: f79170e869381a645a65fa99a0efce95, type: 2}
